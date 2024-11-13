@@ -183,7 +183,7 @@ body {
     filter: sepia(100%);
 }
 #stick {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
 }
