@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Dzīvs!</title>
+        <link rel = "stylesheet" href = "styx.css">
+    </head>
+    <body>
+        <a href = "datorika.html" class = "back">iegūt citu iznākumu/mēģināt vēlreiz</a>
+        <div class = "banner"><h1>Kaķis ir dzīvs!</h1></div>
+        <img src = "https://cdn3.iconfinder.com/data/icons/gaming-54/100/buttons3-512.png" class = "bottom-right">
+        <div class = "bottom-right"><b>Izmanto klavietūru, lai kustinātu!</b></div>
+        <div class="cat-container">
+            <img id="cat" class="cat" src="https://pngimg.com/d/cat_PNG100.png" alt="Cat">
+        </div>
+    <script>
+const cat = document.getElementById('cat');
+
+let position = 0;
+const moveSpeed = 9; 
+
+document.addEventListener('keydown', (event) => {
+
+    if (event.key === 'ArrowRight') {
+    position += moveSpeed;
+    cat.src = 'https://pngimg.com/uploads/cat/cat_PNG50424.png'; 
+} else if (event.key === 'ArrowLeft') {
+    position -= moveSpeed;
+    cat.src = 'https://static.vecteezy.com/system/resources/previews/011/662/655/original/cute-cat-3d-rendering-free-png.png'; 
+}
+
+        cat.style.transform = `translateX(${position}px)`;
+});
+
+document.addEventListener('keyup', (event) => {
+  if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+    cat.src = 'https://pngimg.com/d/cat_PNG100.png'; 
+  }
+});
+    </script>
+    </body>
+
+</html>

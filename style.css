@@ -1,0 +1,45 @@
+body {
+    background-color:black;
+    font-family:monospace;
+}
+h1 {
+    color:rebeccapurple;
+    text-align: center;
+}
+p {
+    color: white;
+    padding: 50px;
+}
+h4 {
+    color:red;
+    border-style:dotted;
+    border-color: red;
+    width: 200px;
+    box-sizing: border-box; 
+    margin-bottom: 45px;
+}
+#box {
+    max-width: 300px;
+    margin: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#box:hover {
+    cursor: zoom-in;
+    content: url('https://pngimg.com/uploads/box/box_PNG11.png');
+    animation-timing-function: ease-out;
+    transition: transform .2s;
+      -ms-transform: scale(1.06); 
+      -webkit-transform: scale(1.06); 
+      transform: scale(1.06); 
+    }
+#scrawny {
+    position:static;
+    max-width: 230px;
+    border-radius: 6px;
+    margin-left: 1500;
+}
+

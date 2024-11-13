@@ -1,0 +1,45 @@
+body {
+    overflow:hidden;
+    background-color: rgb(226, 241, 243);
+    background-image: url('https://cdn.abcotvs.com/dip/images/24996_kgo-windows-bliss-040714-1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:monospace;
+}
+.cat-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.cat {
+    width: 256px; 
+    height: auto;
+    position: absolute;
+    transition: transform 0.2s ease-out;
+  }
+.banner {
+    margin-top: 45px;
+    width: 100%;
+    background-color: rgb(114, 175, 114);
+    overflow: auto;
+    text-align: center;
+    border: 5px black solid;
+}
+.back {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+img {
+    width: 112px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 64px;
+    right: 42px;
+}
